@@ -1,0 +1,566 @@
+/* =========================
+   PROJECT SECTION
+========================= */
+
+.projects-section {
+
+  padding: 110px 20px;
+
+  background: #ffffff;
+
+  overflow: hidden;
+
+}
+
+
+.projects-container {
+
+  max-width: 1150px;
+
+  margin: auto;
+
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.projects-heading {
+
+  text-align: center;
+
+  margin-bottom: 60px;
+
+}
+
+
+.projects-heading .section-label {
+
+  color: #2563eb;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+}
+
+
+.projects-heading h2 {
+
+  margin: 14px 0;
+
+  color: #0f172a;
+
+  font-size: 42px;
+
+}
+
+
+.projects-heading > p:last-child {
+
+  max-width: 600px;
+
+  margin: auto;
+
+  color: #64748b;
+
+  line-height: 1.7;
+
+}
+
+
+/* =========================
+   GRID
+========================= */
+
+.projects-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 25px;
+
+}
+
+
+/* =========================
+   PROJECT CARD
+========================= */
+
+.project-card {
+
+  position: relative;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 8px 20px
+    rgba(15, 23, 42, 0.04);
+
+  transform-style: preserve-3d;
+
+  transition:
+    transform 0.45s ease,
+    box-shadow 0.45s ease,
+    border-color 0.45s ease;
+
+}
+
+
+/* =========================
+   3D HOVER
+========================= */
+
+.project-card:hover {
+
+  transform:
+
+    perspective(1000px)
+
+    rotateX(4deg)
+
+    rotateY(-4deg)
+
+    translateY(-10px)
+
+    translateZ(12px);
+
+  border-color: #bfdbfe;
+
+  box-shadow:
+
+    18px 25px 45px
+    rgba(15, 23, 42, 0.12);
+
+}
+
+
+/* =========================
+   FEATURED PROJECT
+========================= */
+
+.featured-project {
+
+  grid-column: span 2;
+
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+}
+
+
+/* =========================
+   BROWSER PREVIEW
+========================= */
+
+.project-preview {
+
+  min-height: 330px;
+
+  padding: 25px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #eff6ff,
+      #e0e7ff
+    );
+
+  transform:
+    translateZ(15px);
+
+}
+
+
+.browser-bar {
+
+  height: 32px;
+
+  padding: 0 12px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  border-radius:
+    10px 10px 0 0;
+
+  background: #0f172a;
+
+}
+
+
+.browser-bar span {
+
+  width: 8px;
+
+  height: 8px;
+
+  border-radius: 50%;
+
+  background: #64748b;
+
+}
+
+
+.browser-content {
+
+  height: 245px;
+
+  padding: 25px;
+
+  background: white;
+
+  border-radius:
+    0 0 10px 10px;
+
+  box-shadow:
+    0 15px 30px
+    rgba(15, 23, 42, 0.1);
+
+}
+
+
+/* =========================
+   EBOOK PREVIEW
+========================= */
+
+.ebook-logo {
+
+  color: #2563eb;
+
+  font-size: 22px;
+
+  font-weight: 800;
+
+  margin-bottom: 15px;
+
+}
+
+
+.ebook-lines {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+
+}
+
+
+.ebook-lines span {
+
+  height: 7px;
+
+  border-radius: 10px;
+
+  background: #e2e8f0;
+
+}
+
+
+.ebook-lines span:first-child {
+
+  width: 70%;
+
+}
+
+
+.ebook-lines span:nth-child(2) {
+
+  width: 50%;
+
+}
+
+
+.ebook-lines span:nth-child(3) {
+
+  width: 60%;
+
+}
+
+
+/* =========================
+   BOOKS
+========================= */
+
+.ebook-books {
+
+  display: flex;
+
+  gap: 12px;
+
+  margin-top: 25px;
+
+}
+
+
+.ebook-books div {
+
+  width: 65px;
+
+  height: 90px;
+
+  border-radius: 6px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #2563eb,
+      #7c3aed
+    );
+
+  box-shadow:
+    5px 7px 15px
+    rgba(37, 99, 235, 0.2);
+
+}
+
+
+/* =========================
+   PROJECT CONTENT
+========================= */
+
+.project-content {
+
+  position: relative;
+
+  padding: 35px;
+
+}
+
+
+.project-number {
+
+  display: block;
+
+  margin-bottom: 15px;
+
+  color: #94a3b8;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+}
+
+
+.project-content h3 {
+
+  margin: 0 0 14px;
+
+  color: #0f172a;
+
+  font-size: 22px;
+
+}
+
+
+.project-content p {
+
+  margin-bottom: 20px;
+
+  color: #64748b;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+
+}
+
+
+/* =========================
+   TECHNOLOGIES
+========================= */
+
+.project-tech {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-bottom: 25px;
+
+}
+
+
+.project-tech span {
+
+  padding: 6px 10px;
+
+  border-radius: 20px;
+
+  background: #eff6ff;
+
+  color: #2563eb;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+}
+
+
+/* =========================
+   LINKS
+========================= */
+
+.project-links {
+
+  display: flex;
+
+  gap: 10px;
+
+}
+
+
+.project-links a {
+
+  padding: 9px 15px;
+
+  border-radius: 7px;
+
+  background: #2563eb;
+
+  color: white;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+
+}
+
+
+.project-links a:hover {
+
+  transform:
+    translateY(-2px);
+
+  background: #1d4ed8;
+
+}
+
+
+.project-links a:last-child {
+
+  background: #0f172a;
+
+}
+
+
+/* =========================
+   MINI PROJECT
+========================= */
+
+.project-mini-preview {
+
+  height: 190px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #eff6ff,
+      #f5f3ff
+    );
+
+  color: #2563eb;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 800px) {
+
+  .featured-project {
+
+    grid-column: span 1;
+
+    grid-template-columns: 1fr;
+
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .projects-section {
+
+    padding: 80px 20px;
+
+  }
+
+  .projects-heading h2 {
+
+    font-size: 34px;
+
+  }
+
+  .projects-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+  .featured-project {
+
+    grid-column: span 1;
+
+  }
+
+  .project-content {
+
+    padding: 25px;
+
+  }
+
+  .project-preview {
+
+    min-height: 280px;
+
+    padding: 18px;
+
+  }
+
+}

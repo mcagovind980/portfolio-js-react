@@ -1,0 +1,46 @@
+.footer {
+  padding: 50px 20px 30px;
+
+  background: #111827;
+
+  color: white;
+
+  text-align: center;
+}
+
+.footer-content h3 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.footer-content > p {
+  color: #9ca3af;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+
+  margin: 25px 0;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #d1d5db;
+  text-decoration: none;
+
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #60a5fa;
+}
+
+.footer .copyright {
+  padding-top: 20px;
+
+  border-top: 1px solid #374151;
+
+  font-size: 13px;
+}

@@ -1,0 +1,456 @@
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about-section {
+  padding: 110px 20px;
+
+  background: #ffffff;
+
+  overflow: hidden;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.about-container {
+  max-width: 1150px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: 0.85fr 1.15fr;
+
+  align-items: center;
+
+  gap: 80px;
+}
+
+
+/* =========================
+   3D VISUAL
+========================= */
+
+.about-visual {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  perspective: 1000px;
+
+  min-height: 420px;
+}
+
+
+/* =========================
+   MAIN 3D CARD
+========================= */
+
+.about-3d-card {
+  position: relative;
+
+  width: 330px;
+
+  height: 390px;
+
+  padding: 35px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+
+  border-radius: 24px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #eff6ff
+    );
+
+  border: 1px solid #dbeafe;
+
+  box-shadow:
+
+    18px 22px 40px
+    rgba(15, 23, 42, 0.12),
+
+    inset 1px 1px 0
+    rgba(255, 255, 255, 0.9);
+
+  transform:
+    rotateY(-10deg)
+    rotateX(5deg);
+
+  transform-style: preserve-3d;
+
+  transition:
+    transform 0.45s ease,
+    box-shadow 0.45s ease;
+}
+
+
+.about-3d-card:hover {
+
+  transform:
+    rotateY(0deg)
+    rotateX(0deg)
+    translateZ(15px);
+
+  box-shadow:
+
+    25px 30px 55px
+    rgba(15, 23, 42, 0.16);
+}
+
+
+/* =========================
+   NUMBER
+========================= */
+
+.about-card-number {
+  position: absolute;
+
+  top: 20px;
+
+  right: 25px;
+
+  color: #2563eb;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+
+/* =========================
+   AVATAR
+========================= */
+
+.about-avatar {
+  width: 105px;
+
+  height: 105px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  margin-bottom: 22px;
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #7c3aed
+    );
+
+  color: white;
+
+  font-size: 32px;
+
+  font-weight: 800;
+
+  box-shadow:
+
+    0 15px 30px
+    rgba(37, 99, 235, 0.25);
+
+  transform: translateZ(30px);
+}
+
+
+.about-3d-card h3 {
+
+  margin: 0;
+
+  color: #0f172a;
+
+  font-size: 23px;
+
+  transform:
+    translateZ(20px);
+}
+
+
+.about-3d-card > p {
+
+  margin-top: 8px;
+
+  color: #2563eb;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+
+/* =========================
+   LINE
+========================= */
+
+.about-line {
+
+  width: 70px;
+
+  height: 2px;
+
+  margin: 22px 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      #2563eb,
+      #7c3aed
+    );
+}
+
+
+.about-3d-card > span {
+
+  color: #64748b;
+
+  font-size: 12px;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.about-content {
+
+  max-width: 650px;
+}
+
+
+.section-label {
+
+  color: #2563eb;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+
+.about-content h2 {
+
+  margin: 14px 0 22px;
+
+  color: #0f172a;
+
+  font-size: 42px;
+
+  line-height: 1.15;
+}
+
+
+.about-content h2 span {
+
+  color: #2563eb;
+}
+
+
+.about-text {
+
+  color: #64748b;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+
+  margin-bottom: 14px;
+}
+
+
+/* =========================
+   INFO GRID
+========================= */
+
+.about-info-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 16px;
+
+  margin-top: 30px;
+}
+
+
+/* =========================
+   INFO CARD
+========================= */
+
+.about-info-card {
+
+  position: relative;
+
+  min-height: 125px;
+
+  padding: 22px;
+
+  border-radius: 14px;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+
+  box-shadow:
+    0 8px 20px
+    rgba(15, 23, 42, 0.04);
+
+  transform-style: preserve-3d;
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+
+.about-info-card:hover {
+
+  transform:
+    perspective(700px)
+    rotateX(5deg)
+    rotateY(-5deg)
+    translateY(-7px)
+    translateZ(10px);
+
+  border-color: #bfdbfe;
+
+  box-shadow:
+    12px 18px 35px
+    rgba(15, 23, 42, 0.1);
+}
+
+
+/* =========================
+   CARD NUMBER
+========================= */
+
+.info-number {
+
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: #2563eb;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+
+.about-info-card h3 {
+
+  margin: 0 0 7px;
+
+  color: #0f172a;
+
+  font-size: 17px;
+}
+
+
+.about-info-card p {
+
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .about-container {
+
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+
+  }
+
+  .about-content {
+
+    max-width: 100%;
+
+    text-align: center;
+
+  }
+
+  .about-info-grid {
+
+    text-align: left;
+
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .about-section {
+
+    padding: 80px 20px;
+
+  }
+
+  .about-3d-card {
+
+    width: 290px;
+
+    height: 350px;
+
+  }
+
+  .about-content h2 {
+
+    font-size: 34px;
+
+  }
+
+  .about-info-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+}
